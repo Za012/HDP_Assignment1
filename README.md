@@ -34,7 +34,7 @@ What is happening in this code snippet is that there’s 3 functions that are bo
 
     def mapper_get_ratings(self, _, line):
     
-This function simply says, get me all the movies, and name each column this. What we then yield is the data we want to work with, in this case rating + something about that 1. 
+This function simply says, get me all the movies, and name each column this. What we then yield is the data we want to work with, in this case rating and 1, its key-value-pair. 
 Once all this data is mapped, it’ll send it to the reduce function 
 
     def reducer_count_ratings (self, key, values):
